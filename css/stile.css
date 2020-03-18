@@ -16,6 +16,9 @@ body {
 .smallLeaters {
   font-size: small;
 }
+.bigLeaters {
+  font-size: larger;
+}
 .redcolor {
   color: #ed1b24;
 }
