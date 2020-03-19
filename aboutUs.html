@@ -41,8 +41,8 @@
 <!--End of nav bar-->
 
 
-<div class="cover">
-  <img src="img/a2.JPG" class="d-block w-100 h-80" alt="..." height="480 " />
+<div class="row">
+  <img src="img/a2.JPG" class="d-block w-100 h-80" alt="..."  />
 
 </div>
 
@@ -180,73 +180,58 @@ crossorigin="anonymous"
 
 <!--Animations-->
 <script>
-window.sr = ScrollReveal();
-sr.reveal(".navbar-brand", {
-  duration: 2000,
-  origin: "bottom"
-});
 
-sr.reveal("navbar", {
-  duration: 2000,
-  origin: "bottom",
-  distance: "300px"
-});
-sr.reveal(".showcase-btn", {
-  duration: 2000,
-  delay: 1000,
-  origin: "bottom"
-});
-sr.reveal(".animate-bootom", {
-  duration: 2000,
-  origin: "bottom",
-  distance: "300px",
-  viewFactor: 0.2
-});
-sr.reveal(".animate-left", {
-  duration: 2000,
-  origin: "left",
-  distance: "300px",
-  viewFactor: 0.2
-});
-sr.reveal(".animate-right", {
-  duration: 2000,
-  origin: "right",
-  distance: "300px",
-  viewFactor: 0.1
-});
-</script>
 
-<script>
-$(function() {
-  // Smooth Scrolling
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length
-        ? target
-        : $("[name=" + this.hash.slice(1) + "]");
-      if (target.length) {
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top
-          },
-          1000
-        );
-        return false;
-      }
-    }
+
+
+  window.sr = ScrollReveal();
+  sr.reveal(".navbar-brand", {
+    duration: 2000,
+    origin: "bottom"
   });
-});
-</script>
-<script>
-// MDB Lightbox Init
-$(function() {
-  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
-</script>
-<!-- End of Animations-->
+  
+  sr.reveal("navbar", {
+    duration: 2000,
+    origin: "bottom",
+    distance: "300px"
+  });
+  sr.reveal(".showcase-btn", {
+    duration: 1000,
+    delay: 500,
+    origin: "bottom",
+    mobile: false,
+    
+  });
+  sr.reveal(".animate-bootom", {
+    duration: 2000,
+    origin: "bottom",
+    distance: "300px",
+    viewFactor: 0.2
+  });
+  sr.reveal(".animate-left", {
+    duration: 2000,
+    origin: "left",
+    distance: "300px",
+    viewFactor: 0.2,
+    mobile: false,
+  });
+  sr.reveal(".animate-right", {
+    duration: 2000,
+    origin: "right",
+    distance: "300px",
+    viewFactor: 0.2,
+    mobile: false,
+    
+  });
+  
+  
+  </script>
+  
+  <script>
+  // MDB Lightbox Init
+  $(function() {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+  </script>
+  <!-- End of Animations-->
 </html>

@@ -10,6 +10,10 @@ body {
   max-height: 100%;
 }
 
+.cover {
+  height: 100%;
+}
+
 .p0 {
   padding: 0 !important;
 }
@@ -140,6 +144,15 @@ showcase-right {
   }
 }
 
+@media only screen and (max-width: 916px) {
+  .carousel-item {
+    height: 22rem !important;
+  }
+  .carousel-item > img {
+    height: 22rem !important;
+  }
+}
+
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 
@@ -159,15 +172,5 @@ showcase-right {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
-  }
-}
-
-@media (max-width: 800px) {
-  * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
   }
 }
